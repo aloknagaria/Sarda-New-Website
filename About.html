@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="Sarda.css">
+    <link rel="icon" href="asset/bigLogo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="asset/bigLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="asset/logo.svg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="image-container">
+            <img src="asset/bigLogo.svg" alt="Blurred Image" class="blurred">
+        </div>
+
+        <div class="text-box">
+            <h1>Transforming IT, Unleashing Data</h1>
+            <h2>Data Science + IT Infrastructure Consulting <br> and Solutions for Start-ups and MSMEs</h2>
+        </div>
+    </header>
+
+    <section style="margin-top: 3%;">
+        <div class="about-us">
+            <div class="image-container-about"><img src="asset/About-us Image 1.png" alt=""></div>
+            <div class="sub-about-us">
+                <h1>About Us</h1>
+                <p>We specialize in providing startups and businesses with comprehensive data intelligence and IT solutions. Our services cater to organizations with or without existing IT infrastructure, helping them leverage the power of technology to optimize their operational and management tasks. From implementing robust IT systems to harnessing data-driven insights, we empower startups to stay ahead of the competition and achieve sustainable growth. Our expertise in both Data Science and IT allows us to deliver tailored solutions that align with your unique business needs.</p>
+            </div>
+        </div>
+
+        <div class="our-culture">
+            <div class="sub-about-us">
+                <h1>Our Culture</h1>
+                <p>Collaboration fuels ingenious solutions. Clients inspire our tailored successes. Learning navigates change; integrity guides us. We value work-life balance, fostering well-being. Diversity unites unique perspectives for collective brilliance. We're not just a team; we're a closely-knit family. Join our journey, where passion and innovation fuse with culture for consultancy excellence. Transform with us. Contact today and be part of our vibrant tapestry.</p>
+            </div>
+            <div class="image-container-about"><img src="asset/About-us Image 2.png" alt=""></div>
+        </div>
+
+        <div class="our-mission">
+            <div class="image-container-about"><img src="asset/About-us Image 3.png" alt=""></div>
+            <div class="sub-about-us">
+                <h1>Our Mission</h1>
+                <p>We specialize in providing startups and businesses with comprehensive data intelligence and IT solutions. Our services cater to organizations with or without existing IT infrastructure, helping them leverage the power of technology to optimize their operational and management tasks. From implementing robust IT systems to harnessing data-driven insights, we empower startups to stay ahead of the competition and achieve sustainable growth. Our expertise in both Data Science and IT allows us to deliver tailored solutions that align with your unique business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="different">
+        <h1>What Makes Us Different</h1>
+        <p><span>Comprehensive Expertise:</span> With a blend of Data Science and IT capabilities, we offer a holistic range of services that cover everything from data analytics to IT infrastructure implementation. Our team's diverse skill set allows us to deliver integrated solutions tailored to your specific business needs.</p>
+        <p><span>Startup-Focused Approach:</span> We understand the unique challenges faced by startups and businesses without existing IT infrastructure. Our solutions are designed to address these challenges, helping you leverage technology to optimize your operations, improve decision-making, and achieve faster growth.</p>
+    </section>
+
+    <section class="contact-direction">
+        <h1>Ready to Talk?</h1>
+        <a href="#">Contact Us</a>
+    </section>
+
+    <footer>
+        <sub>
+            <div class="ftopic">SARDA Consulting</div>
+            <div>
+                Stay Connected with Us. Follow us on social media for the latest updates, industry insights, and
+                helpful resources to fuel your business growth.
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <div class="fa-div">
+                    <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="fa-div">
+                    <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </sub>
+        <sub>
+            <div class="ftopic">Quick Links</div>
+            <div class="nav-icons">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </sub>
+        <sub>
+            <div class="ftopic">Get in Touch</div>
+            <div>91 Springboard Business Hub Pvt Ltd, <br> Plot No. D-107, Sector 2, <br> NOIDA, UP <br> India - 201301</div>
+            <div>+91234567890</div>
+            <div>contact@sardatech.in</div>
+        </sub>
+    </footer>
+    <div class="footer2">
+        <p>&copy; Copyright 2023 SARDA Consulting</p>
+    </div>
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
