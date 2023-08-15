@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="asset/bigLogo.svg" type="image/x-icon">
     <!-- <link rel="shortcut icon" href="asset/bigLogo.svg" type="image/x-icon"> -->
-    <link rel="stylesheet" href="Sarda.css">
+    <link rel="stylesheet" href="SardaOtheSection.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@600;700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Sarda Consulting</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="asset/logo.svg" alt=""></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About.html">ABOUT US</a></li>
-                    <li><a href="Services.html">SERVICES</a></li>
-                    <li><a href="Blog.html">BLOG</a></li>
-                    <li><a href="Contact.html">CONTACT US</a></li>
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
 
-        <div class="image-container">
-            <img src="asset/bigLogo.svg" alt="Blurred Image" class="blurred">
+    <nav>
+        <a href="index.html"><img src="asset/logo.svg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT US</a></li>
+            </ul>
         </div>
-
-        <div class="text-box">
-            <h1>Transforming IT, Unleashing Data</h1>
-            <h2>Data Science + IT Infrastructure Consulting <br> and Solutions for Start-ups and MSMEs</h2>
-        </div>
-    </header>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
+
 </html>
