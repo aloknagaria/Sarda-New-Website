@@ -46,7 +46,7 @@ nav img {
     content: '';
     width: 0%;
     height: 3px;
-    background: white;
+    background: #ec0066;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -141,9 +141,9 @@ nav .fa-solid {
 
 .about-section div:first-child {
     font-size: 70px;
-    font-weight: 900;
-    padding-top: 2.5%;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2em;
 }
 
 .about-section div:nth-child(2) {
@@ -163,22 +163,28 @@ nav .fa-solid {
     margin-top: 1em;
     /* border: 1px solid black; */
     padding: 0px;
-    width: 6em;
+    width: 10.2em;
     text-decoration: none;
-    color: #21800E;
+    color: #ec0066;
+}
+
+.read-more::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ec0066;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.read-more:hover::after {
+    width: 100%;
 }
 
 .fa-arrow-right {
     position: relative;
     top: 1px;
-}
-
-.read-more:hover {
-    color: #21800E;
-    background-color: black;
-    border-radius: 10px;
-    padding: 5px;
-    transition: 0.5s;
 }
 
 .special-section {
