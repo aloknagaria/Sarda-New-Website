@@ -49,7 +49,7 @@ nav img {
     width: 100%;
 }
 
-.responsive-aboutUs{
+.responsive-aboutUs {
     display: none;
 }
 
@@ -59,7 +59,7 @@ nav .fa-solid {
 
 /* About page */
 
-.aboutPage-main{
+.aboutPage-main {
     margin-top: 7em;
     display: flex;
     flex-direction: row;
@@ -69,11 +69,11 @@ nav .fa-solid {
     gap: 5em;
 }
 
-.aboutPage-main div h1{
+.aboutPage-main div h1 {
     margin-bottom: 0.5em;
 }
 
-.left-section{
+.left-section {
     width: 40em;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,12 @@ nav .fa-solid {
     text-align: justify;
     font-size: 25px;
 }
-.right-section{
+
+#ourCulture{
+    text-align: end;
+}
+
+.right-section {
     width: 40em;
     display: flex;
     flex-direction: column;
@@ -102,11 +107,12 @@ nav .fa-solid {
 
 .different h1 {
     font-size: 45px;
+    margin-bottom: 0.7em;
 }
 
 .different p {
-    margin:20px;
-    padding:0 11em;
+    margin: 20px;
+    padding: 0 11em;
     font-size: 25px;
     text-align: center;
 }
@@ -196,11 +202,107 @@ footer sub {
     background-color: #ea3a60;
 }
 
-.Quick-links{
+.Quick-links {
     width: 300px;
     margin-left: 40px;
     margin-right: 40px;
 }
+
+.Enterprise-development {
+    min-height: 75vh;
+    background-color: #eeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-development {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    margin-top: 5em;
+    padding: 50px;
+}
+
+.sub-development h1 {
+    margin-bottom: 1em;
+    font-size: 35px;
+}
+
+.sub-development p {
+    font-size: 25px;
+}
+
+.point-subdevelopment {
+    margin-top: 3em;
+    display: flex;
+    /*flex-direction: row;
+    justify-content: center; */
+    gap: 50px;
+    font-size: 25px;
+}
+
+.point-subdevelopment div ul li {
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.point-subdevelopment div ul li::before {
+    content: '➜';
+    background-color: green;
+    margin-right: 0.5em;
+    padding: 5px;
+}
+
+.first-svg {
+    /* width: 0.2rem; */
+    height: 25em;
+    position: absolute;
+    width: 100%;
+    top: 16%;
+    left: 78%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Place the image behind the content */
+}
+
+.second-svg {
+    /* width: 0.2rem; */
+    height: 25em;
+    position: absolute;
+    width: 100%;
+    top: 23%;
+    left: 21.8%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Place the image behind the content */
+}
+
+
+.separating-border {
+    /* content: ''; */
+    width: 4.5em;
+    height: 3px;
+    background: #ffbf00;
+    /* display:block; */
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+.separating-border-right{
+    width: 4.5em;
+    height: 3px;
+    background: #ffbf00;
+    /* display:block; */
+    margin-bottom: 25px;
+    margin-left: 19.5em;
+    transition: 0.5s;
+}
+
+
 
 @media (max-width:1400px) {
 
@@ -232,18 +334,18 @@ footer sub {
         padding: 10px;
     }
 
-    .aboutPage-main{
+    .aboutPage-main {
         display: none;
     }
 
-    .responsive-aboutUs{
+    .responsive-aboutUs {
         margin-top: 20px;
         display: flex;
         padding: 0 20px;
         flex-direction: column;
     }
 
-    .sub-about-us{
+    .sub-about-us {
         /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
@@ -252,7 +354,7 @@ footer sub {
 
     .about-us,
     .our-culture,
-    .our-mission{
+    .our-mission {
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -261,15 +363,15 @@ footer sub {
         font-size: 20px;
     }
 
-    .responsive-aboutUs h1{
+    .responsive-aboutUs h1 {
         font-size: 30px;
     }
 
     .different p {
-        margin:20px;
-        padding:0 2em;
+        margin: 20px;
+        padding: 0 2em;
         font-size: 25px;
         text-align: justify
     }
-    
+
 }

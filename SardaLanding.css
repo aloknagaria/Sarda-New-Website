@@ -257,6 +257,7 @@ nav .fa-solid {
 
 .services-img img {
     width: 30em;
+    margin-bottom: 30px;
 }
 
 .services-img p {
@@ -441,7 +442,8 @@ footer sub {
 }
 
 .Quick-links{
-    margin: 0 40px;
+    margin-left: 30px;
+    width: 200px;
 }
 
 @media (max-width:1400px) {
