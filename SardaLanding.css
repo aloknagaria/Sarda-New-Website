@@ -218,6 +218,7 @@ nav .fa-solid {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+    padding-bottom: 2em;
     /* gap: 30px; */
 }
 
@@ -252,11 +253,11 @@ nav .fa-solid {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5em;
+    gap: 3em;
 }
 
 .services-img img {
-    width: 30em;
+    width: 27em;
     margin-bottom: 30px;
 }
 
