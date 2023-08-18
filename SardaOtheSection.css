@@ -403,10 +403,18 @@ footer sub {
         flex-direction: column;
     }
 
+    .image-container-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .sub-about-us {
         /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 0 3em;
         gap: 0.6em;
     }
 
