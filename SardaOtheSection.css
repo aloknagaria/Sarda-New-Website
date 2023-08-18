@@ -213,6 +213,7 @@ footer sub {
 
 .large-screen{
     background-color: #eeee;
+    padding-bottom: 5em;
 }
 .Enterprise-development {
     min-height: 75vh;
@@ -314,6 +315,7 @@ footer sub {
     align-items: center;
     text-align: center;
     padding-bottom: 2em;
+    /* margin-top: 5em; */
 }
 
 .not-sure h1{
