@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Typing Animation</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-option {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .dropdown-option:hover {
+    background-color: #ddd;
+  }
+</style>
 </head>
 <body>
-    <div class="typing-container">
-        <p id="typing-text"></p>
-    </div>
-    <script src="temp.js"></script>
+
+<div class="dropdown">
+  <button class="dropdown-button">Hover Me</button>
+  <div class="dropdown-content">
+    <a href="#" class="dropdown-option">New User</a>
+    <a href="#" class="dropdown-option">My Order</a>
+    <a href="#" class="dropdown-option">My Wishlist</a>
+    <a href="#" class="dropdown-option">My Draft</a>
+  </div>
+</div>
+
 </body>
 </html>

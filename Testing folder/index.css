@@ -7,11 +7,21 @@ body {
   background-color: #f0f0f0;
 }
 
-.typing-container {
-  text-align: center;
-  font-size: 24px;
-  font-family: 'Arial', sans-serif;
-  border: 2px solid #333;
-  padding: 20px;
-  background-color: #fff;
+.hover-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 1.8em 2.8em;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  /* perspective: 1000px; Add perspective to create 3D effect */
+  transition: transform 0.8s ease; /* Apply smooth transition on transform */
+  transition: padding 0.3s ease;
+}
+
+.hover-button:hover {
+  /* padding: 30px; */
+  padding: 3em 4em;
+  /* transform: translatey(-5px); Move the button towards the viewer */
 }
