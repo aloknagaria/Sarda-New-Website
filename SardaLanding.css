@@ -199,20 +199,21 @@ nav .fa-solid {
 .heading {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    padding: 50px;
+    /* margin-top: 0.5em; */
+    padding-top: 50px;
+    margin-bottom: 0.7em;
     font-size: 30px;
     /* align-items: center; */
 }
 
 .separating-border {
     /* content: ''; */
-    width: 10%;
+    width: 10em;
     height: 3px;
     background: #ffbf00;
     /* display:block; */
-    margin: auto;
-    margin-bottom: 25px;
+    margin:auto;
+    margin-bottom: 30px;
     transition: 0.5s;
 }
 
