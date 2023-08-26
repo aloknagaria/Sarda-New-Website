@@ -105,8 +105,9 @@ nav .fa-solid {
 }
 
 .different h1 {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 0.7em;
+    font-weight: 900;
 }
 
 .different p {
@@ -127,8 +128,9 @@ nav .fa-solid {
     align-items: center;
     margin-top: 3%;
     gap: 40px;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 3%;
+    /* font-weight: 900; */
 }
 
 .contact-direction a {
@@ -241,20 +243,19 @@ footer sub {
 .sub-development p {
     font-size: 25px;
 }
-
+/* 
 .point-subdevelopment {
     margin-top: 3em;
     display: flex;
-    /*flex-direction: row;
-    justify-content: center; */
-    gap: 50px;
-    font-size: 25px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
 }
 
 .point-subdevelopment div ul li {
     list-style-type: none;
     margin-bottom: 1em;
-    margin-left: 2em;
 }
 
 .point-subdevelopment div ul li::before {
@@ -262,6 +263,40 @@ footer sub {
     background-color: #ffbf00;
     margin-right: 0.5em;
     padding: 5px;
+} */
+
+.point-subdevelopment {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.point-subdevelopment div ul {
+    padding-left: 0; 
+    /* Remove default padding */
+    list-style: none; /* Remove default list styles */
+}
+
+.point-subdevelopment div ul li {
+    margin-bottom: 1em;
+    padding-left: 1.5em; 
+    /* Add padding to create space for the bullet */
+    position: relative; 
+    /* Create a positioning context for ::before pseudo-element */
+}
+
+.point-subdevelopment div ul li::before {
+    content: '➜';
+    background-color: #ffbf00;
+    position: absolute; 
+    /* Position the bullet */
+    left: -5px;
+    /* top: 1em;  */
+    /* Adjust the vertical alignment */
+    padding: 0 5px;
 }
 
 .first-svg {
@@ -347,7 +382,6 @@ footer sub {
     height: 3px;
     background: #0B0D3E;
     margin-top: 3em;
-    /* display:block; */
     margin-bottom: 25px;
     transition: 0.5s;
 }
@@ -356,8 +390,7 @@ footer sub {
     display: none;
 }
 
-@media (max-width:1400px) {
-
+@media (max-width: 1000px){
     .nav-links ul li {
         display: inline-block;
     }
@@ -385,6 +418,9 @@ footer sub {
     .nav-links ul {
         padding: 10px;
     }
+}
+
+@media (max-width:1400px) {
 
     .aboutPage-main {
         display: none;
@@ -404,7 +440,6 @@ footer sub {
     }
 
     .sub-about-us {
-        /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -420,16 +455,16 @@ footer sub {
         gap: 1em;
         margin-bottom: 2em;
         text-align: justify;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .responsive-aboutUs h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .different p {
         margin: 20px;
-        padding: 0 2em;
+        padding: 0 7em;
         font-size: 25px;
         text-align: justify
     }
@@ -446,12 +481,9 @@ footer sub {
     }
 
     .first-svg {
-        /* width: 0.2rem; */
         height: 9em;
         margin-top: 5.2em;
         margin-left: -15em;
         z-index: 1;
-        /* Place the image behind the content */
     }
-
 }

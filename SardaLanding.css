@@ -10,8 +10,9 @@ header {
     background-color: #0B0D3E;
     background-position: center;
     background-size: cover;
-    position: relative;
-    padding-bottom: 2em;
+    /* justify-content: center; */
+    /* position: relative; */
+    padding-bottom: 9em;
 }
 
 nav {
@@ -98,13 +99,13 @@ nav img {
 }
 
 .image-container {
-    margin-top: 9em;
+    margin-top: 7.5em;
     display: flex;
     justify-content: center;
 }
 
 .image-container img {
-    height: 15em;
+    height: 12em;
 }
 
 .blurred {
@@ -150,7 +151,7 @@ nav .fa-solid {
 
 .about-section div:nth-child(2) {
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 150%;
     /* background-color: #0B0D3E; */
 }
@@ -256,16 +257,26 @@ nav .fa-solid {
     flex-direction: row;
     justify-content: center;
     gap: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+.services-description{
+    display: flex;
+    /* width: 50em; */
+    padding: 0 7em;
+    font-size: 20px;
+    text-align: center;
 }
 
 .services-img img {
-    width: 25em;
+    width: 20em;
     margin-bottom: 30px;
 }
 
 .services-img p {
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* Choose Us */
@@ -277,18 +288,17 @@ nav .fa-solid {
 .choose-description {
     margin-top: 3%;
     font-size: 20px;
-    padding: 0 400px;
-    text-align: center;
+    padding: 0 7em;
     margin-bottom: 3em;
+    text-align: center;
 }
 
 .chooseUs-subsection {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 150px;
-    gap: 40px;
-
+    padding: 0 5em;
+    gap: 2em;
 }
 
 .planning {
@@ -300,21 +310,21 @@ nav .fa-solid {
 }
 
 .planning p {
-    text-align: center;
-    font-size: 35px;
+    font-size: 1.5em;
 }
 
 .circular-img {
     border-radius: 50%;
     border: 1px solid black;
-    width: 20em;
-    height: 20em;
+    /* width: 20em; */
+    height: 5em;
 }
 
 .detailing {
     text-align: center;
     font-size: 20px;
-    width: 100%;
+    /* width: 100%; */
+    width: 18em;
     padding: 0;
 }
 
@@ -359,23 +369,24 @@ nav .fa-solid {
     /* border: 1px solid black; */
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    width: 25em;
 }
 
 .feedback-subsection sub p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .feedback-img {
     display: flex;
-    width: 400px;
+    width: 15em;
     font-size: 20px;
     /* background-color: blue; */
     justify-content: space-between;
 }
 
 .feedback-img img {
-    width: 100px;
-    height: 100px;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
 }
 
@@ -450,7 +461,7 @@ footer sub {
     width: 200px;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1000px) {
 
     header {
         min-height: 100vh;
@@ -531,9 +542,9 @@ footer sub {
 
     .services-img {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 10px; */
     }
 
     .services-img img{
@@ -553,20 +564,20 @@ footer sub {
     .chooseUs-subsection {
         display: flex;
         flex-direction: column;
-        padding: 0 80px;
+        align-items: center;
+        /* padding: 0 80px; */
     }
 
     .circular-img {
-        border-radius: 50%;
-        width: 25em;
-        /* background-color: black; */
+        height: 5em;
+        background-color: black;
     }
 
     .chooseUs-subsection div p {
         display: flex;
         justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        /* margin-top: 5%; */
+        margin-bottom: 1em;
         font-size: 25px;
     }
 
@@ -600,11 +611,12 @@ footer sub {
         /* margin-top: 20%; */
         display: flex;
         /* border: 1px solid black; */
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
         margin-top: 40px;
         margin-bottom: 100px;
-        padding: 0 35em;
+        /* padding: 0 35em; */
+        /* width: 0.8em; */
     }
 }
