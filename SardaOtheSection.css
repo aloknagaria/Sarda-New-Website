@@ -81,7 +81,7 @@ nav .fa-solid {
     font-size: 25px;
 }
 
-#ourCulture{
+#ourCulture {
     text-align: end;
 }
 
@@ -213,17 +213,21 @@ footer sub {
 
 /* Services */
 
-.large-screen{
+.large-screen {
     background-color: #eeee;
     padding-bottom: 5em;
 }
+
 .Enterprise-development {
-    min-height: 75vh;
+    min-height: 100vh;
+    min-width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    justify-content: center; 
+    /* padding-bottom: 3em; */
+    /* gap: 3em; */
+    scroll-snap-align: start;
+    /* background-color: #f0f0f0; */
 }
 
 .sub-development {
@@ -253,28 +257,29 @@ footer sub {
     font-size: 20px;
 }
 
-.point-subdevelopment div{
+.point-subdevelopment div {
     width: 40em;
 }
 
 .point-subdevelopment div ul {
-    padding-left: 0; 
+    padding-left: 0;
     /* Remove default padding */
-    list-style: none; /* Remove default list styles */
+    list-style: none;
+    /* Remove default list styles */
 }
 
 .point-subdevelopment div ul li {
     margin-bottom: 1em;
-    padding-left: 1.5em; 
+    padding-left: 1.5em;
     /* Add padding to create space for the bullet */
-    position: relative; 
+    position: relative;
     /* Create a positioning context for ::before pseudo-element */
 }
 
 .point-subdevelopment div ul li::before {
     content: '➜';
     background-color: #ffbf00;
-    position: absolute; 
+    position: absolute;
     /* Position the bullet */
     left: -5px;
     /* top: 1em;  */
@@ -313,7 +318,7 @@ footer sub {
     transition: 0.5s;
 }
 
-.separating-border-right{
+.separating-border-right {
     width: 4.5em;
     height: 3px;
     background: #ffbf00;
@@ -323,7 +328,7 @@ footer sub {
     transition: 0.5s;
 }
 
-.not-sure{
+.not-sure {
     /* background-color: #ea3a60; */
     background-color: #ffbf00;
     min-height: 50vh;
@@ -335,12 +340,12 @@ footer sub {
     /* margin-top: 5em; */
 }
 
-.not-sure h1{
+.not-sure h1 {
     margin-top: 2em;
     font-size: 4em;
 }
 
-.not-sure a{
+.not-sure a {
     color: #ffbf00;
     background-color: #0B0D3E;
     font-weight: 900;
@@ -352,14 +357,14 @@ footer sub {
     transition: padding 0.4s ease;
 }
 
-.not-sure a:hover{
+.not-sure a:hover {
     padding: 0.8em 2.6em;
     font-size: 2em;
     color: #ffbf00;
     background-color: #0B0D3E;
 }
 
-.separating-border-blue{
+.separating-border-blue {
     width: 10em;
     height: 3px;
     background: #0B0D3E;
@@ -368,11 +373,11 @@ footer sub {
     transition: 0.5s;
 }
 
-.small-screen{
+.small-screen {
     display: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .nav-links ul li {
         display: inline-block;
     }
@@ -415,7 +420,7 @@ footer sub {
         flex-direction: column;
     }
 
-    .image-container-about{
+    .image-container-about {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -452,15 +457,31 @@ footer sub {
         text-align: justify
     }
 
-    .large-screen{
+    .large-screen {
         display: none;
     }
 
-    .small-screen{
+    .small-screen {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #eeee;
+        flex-direction: column;    
+        height: 100vh;
+        gap: 4em;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        margin-bottom: 5em;
+    }
+
+    .small-screen::-webkit-scrollbar {
+        width: 0.5em;
+        /* Adjust as needed */
+    }
+
+    .small-screen::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .small-screen::-webkit-scrollbar-thumb {
+        background-color: transparent;
     }
 
     .first-svg {
@@ -470,7 +491,7 @@ footer sub {
         z-index: 1;
     }
 
-    .not-sure{
+    .not-sure {
         padding-bottom: 2em;
     }
 }
