@@ -228,10 +228,10 @@ footer sub {
 
 .sub-development {
     background-color: white;
-    width: 800px;
-    height: 500px;
+    width: 50em;
+    height: 28em;
     margin-top: 5em;
-    padding: 50px;
+    padding: 3em;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -243,35 +243,18 @@ footer sub {
 .sub-development p {
     font-size: 25px;
 }
-/* 
-.point-subdevelopment {
-    margin-top: 3em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    font-size: 20px;
-}
-
-.point-subdevelopment div ul li {
-    list-style-type: none;
-    margin-bottom: 1em;
-}
-
-.point-subdevelopment div ul li::before {
-    content: '➜';
-    background-color: #ffbf00;
-    margin-right: 0.5em;
-    padding: 5px;
-} */
 
 .point-subdevelopment {
     margin-top: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    /* gap: 20px; */
     font-size: 20px;
+}
+
+.point-subdevelopment div{
+    width: 40em;
 }
 
 .point-subdevelopment div ul {
@@ -349,7 +332,6 @@ footer sub {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 2em;
     /* margin-top: 5em; */
 }
 
@@ -443,7 +425,8 @@ footer sub {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 7em;
+        padding: 0 4em;
+        /* width:  40em; */
         gap: 0.6em;
     }
 
@@ -464,7 +447,7 @@ footer sub {
 
     .different p {
         margin: 20px;
-        padding: 0 7em;
+        padding: 0 4em;
         font-size: 25px;
         text-align: justify
     }
@@ -485,5 +468,9 @@ footer sub {
         margin-top: 5.2em;
         margin-left: -15em;
         z-index: 1;
+    }
+
+    .not-sure{
+        padding-bottom: 2em;
     }
 }

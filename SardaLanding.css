@@ -12,7 +12,7 @@ header {
     background-size: cover;
     /* justify-content: center; */
     /* position: relative; */
-    padding-bottom: 9em;
+    /* padding-bottom: 9em; */
 }
 
 nav {
@@ -99,13 +99,13 @@ nav img {
 }
 
 .image-container {
-    margin-top: 7.5em;
+    margin-top: 13em;
     display: flex;
     justify-content: center;
 }
 
 .image-container img {
-    height: 12em;
+    height: 11em;
 }
 
 .blurred {
@@ -131,12 +131,10 @@ nav .fa-solid {
 
 
 .about-section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
     width: 80%;
     margin-left: 10%;
 }
@@ -146,7 +144,7 @@ nav .fa-solid {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    margin-top: 1.2em;
+    /* margin-top: 1.2em; */
 }
 
 .about-section div:nth-child(2) {
@@ -191,9 +189,12 @@ nav .fa-solid {
 }
 
 .special-section {
-    min-height: 50vh;
+    min-height: 100vh;
     background-color: #0b0d3e;
     color: white;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
 }
 
 .heading {
@@ -218,23 +219,26 @@ nav .fa-solid {
 }
 
 .sub-special {
-    /* background-color: black; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
-    padding-bottom: 2em;
-    /* gap: 30px; */
+    padding: 0 4em ;
+    gap: 4em;
 }
 
 .sub-special h1 {
-    color: #ec0066;
+    color: #ffbf00;
+}
+
+.sub-special img{
+    margin-bottom: 2em;
 }
 
 #quality-1,
 #quality-2,
 #quality-3 {
     text-align: center;
-    width: 400px;
+    width: 23em;
     /* background-color: black; */
 
 }
@@ -243,7 +247,7 @@ nav .fa-solid {
 #quality-2 div,
 #quality-3 div {
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
     /* text-shadow: 2px 2px; */
@@ -253,19 +257,26 @@ nav .fa-solid {
     margin-top: 35px;
 }
 
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 4em;
+}
+
 .services-img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 3em;
     padding: 0;
-    margin: 0;
+    margin-top: 2em;
 }
 
 .services-description{
     display: flex;
     /* width: 50em; */
-    padding: 0 7em;
+    padding: 0 3em;
     font-size: 20px;
     text-align: center;
 }
@@ -282,8 +293,9 @@ nav .fa-solid {
 
 /* Choose Us */
 .chooseUs {
-    min-height: 50vh;
-    margin-bottom: 40px;
+    min-height: 100vh;
+    margin-top: 4em;
+    /* margin-bottom: 40px; */
 }
 
 .choose-description {
@@ -330,7 +342,7 @@ nav .fa-solid {
 }
 
 .counter-container {
-    margin-top: 3%;
+    margin-top: 6em;
     display: flex;
     justify-content: space-evenly;
     padding-top: 55px;
@@ -351,6 +363,7 @@ nav .fa-solid {
 
 .feedback {
     width: 80%;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
@@ -418,7 +431,7 @@ footer {
 }
 
 footer sub {
-    width: 450px;
+    width: 60em;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -459,7 +472,21 @@ footer sub {
 .Quick-links{
     margin-left: 3em;
     margin-right: 3em;
-    width: 200px;
+    width: 30em;
+}
+
+@media (min-width:1000px) and (max-width: 1400px){
+    .image-container {
+        margin-top: 5em;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        /* height: 4%; */
+        width: 14em;
+    }
 }
 
 @media (max-width:1000px) {
@@ -515,8 +542,10 @@ footer sub {
     }
 
     .about-section {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        /* flex-direction: column; */
+        align-content: center;
+        justify-content: center;
         gap: 50px;
         overflow: hidden;
         /* border: 1px solid black; */
