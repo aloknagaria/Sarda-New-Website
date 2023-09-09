@@ -218,16 +218,10 @@ footer sub {
     padding-bottom: 5em;
 }
 
-.Enterprise-development {
-    min-height: 100vh;
-    min-width: 80vw;
+.services-provided {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
-    /* padding-bottom: 3em; */
-    /* gap: 3em; */
-    scroll-snap-align: start;
-    /* background-color: #f0f0f0; */
+    justify-content: center;
 }
 
 .sub-development {
@@ -289,20 +283,17 @@ footer sub {
 
 .first-svg {
     /* width: 0.2rem; */
-    height: 25em;
-    margin-top: 6em;
-    margin-left: -5em;
-    /* position: absolute;
-    width: 100%;
-    top: 16%;
-    left: 78%;
-    transform: translateX(-50%);*/
-    /* Place the image behind the content */
+    height: 15em;
+    width: 22em;
+    margin-top: 1.2em;
+    margin-left: -10em;
+    z-index: 1;
 }
 
 .second-svg {
     /* width: 0.2rem; */
-    height: 25em;
+    height: 15em;
+    width: 22em;
     margin-top: 5em;
     margin-right: -5em;
 }
@@ -337,6 +328,7 @@ footer sub {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* padding-bottom: 5em; */
     /* margin-top: 5em; */
 }
 
@@ -454,7 +446,7 @@ footer sub {
         margin: 20px;
         padding: 0 4em;
         font-size: 25px;
-        text-align: justify
+        text-align: justify;
     }
 
     .large-screen {
@@ -464,34 +456,21 @@ footer sub {
     .small-screen {
         display: flex;
         flex-direction: column;    
-        height: 100vh;
         gap: 4em;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        margin-bottom: 5em;
-    }
-
-    .small-screen::-webkit-scrollbar {
-        width: 0.5em;
-        /* Adjust as needed */
-    }
-
-    .small-screen::-webkit-scrollbar-track {
-        background-color: transparent;
-    }
-
-    .small-screen::-webkit-scrollbar-thumb {
-        background-color: transparent;
+        /* overflow-y: scroll;
+        scroll-snap-type: y mandatory; */
+        /* margin-bottom: 5em; */
     }
 
     .first-svg {
-        height: 9em;
+        height: 8.5em;
+        width: 12em;
         margin-top: 5.2em;
         margin-left: -15em;
         z-index: 1;
     }
 
     .not-sure {
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
 }
