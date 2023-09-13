@@ -1,8 +1,20 @@
-const sections = document.querySelectorAll(".scroll-section");
+// const navbar = document.getElementById("navbar");
 
-sections.forEach(section => {
-  section.addEventListener("click", () => {
-    sections.forEach(s => s.classList.remove("active"));
-    section.classList.add("active");
-  });
+// navbar.addEventListener("mouseenter", () => {
+//     navbar.style.display = "block" ;
+// });
+
+// navbar.addEventListener("mouseleave", () => {
+//     navbar.style.display = "none";
+// });
+
+const navbar = document.getElementById("navbar");
+
+navbar.addEventListener("mouseenter", () => {
+    navbar.style.top = "0";
 });
+
+navbar.addEventListener("mouseleave", () => {
+    navbar.style.top = "-50px";
+});
+
